@@ -1,5 +1,6 @@
 export const fetchHandler = async (url, options = {}) => { //declaring a function with async wraps its return value in a resolved promise. values are returned directly and wil be wrapped in a promise that resolves with that value.
   try {
+    /** FEEDBACK: WOW! YOUR DOCUMENTATION IS TOP TIER!!!! You are putting in the workkkk! */
     const response = await fetch(url, options);// using await on a promise(async turned our function into a promise) , the function execution is paused until fulfillment while the main event loop is not. Allowing for other operations to continue.This prevents code blocking.
     if (!response.ok ) throw new Error('Fetch failed with status - [STATUS], [STATUS_TEXT]')
 //if response it not ok we will throw a custom error (new error )containing custom message ideally about the error.
